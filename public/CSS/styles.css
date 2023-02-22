@@ -1,0 +1,343 @@
+*{
+    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.header-completo{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.logo-header{
+    width: 200px;
+    margin: 0,5px;
+    border-color: #ebebeb;
+    background-color: #EAC926;
+}
+
+.header-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.frase-logo-header{
+    display: flex;
+    font-size: 12px;
+    
+}
+
+.lista-navegacion-header{
+    text-decoration: none;
+    color: #222222;
+    display:none;
+    padding: 4px;    
+    flex-direction: column;
+}
+
+.icono-burga-header{
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+
+}
+
+.icono-burga-clase{
+    background-color: #03264c;
+    padding: 8px;
+    color: white;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.main-completo{
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+.section-main-ultima-visita{
+    background-color: #ebebeb;
+    margin: 1px;
+    width: 90%;
+    margin: auto;
+}
+
+.foto-banner-main-ultima-visita{
+    width: 100%;
+    margin: 0,5px;
+    border-color: #ebebeb;
+    background-color: #EAC926;
+}
+
+.titulo-main-ultima-visita{
+    font-size: 24px; 
+    font-weight: 800;
+    color:#666;
+    width: 100%;
+    text-align: center;
+    background-color: #ebebeb;
+    margin-top: 0px;
+}
+
+.article-main-ultima-visita{
+    margin: 10px;
+    border-top: 1px solid #ebebeb;
+    border-left: 15px;
+    border-left: 15px;
+    padding: 15px #ebebeb;
+    background-color: white;
+
+}
+
+.foto-article-main-ultima-visita{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.contenido-article-main-ultima-visita{
+    display: flex; 
+}
+
+.icono-envio-ultima-visita{
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    color: green;  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.iconoenvio{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+
+.precio-article-main-ultima-visita{
+    color: #666;
+    font-size: 18px;
+    font-weight:bolder;
+    width: 30%;
+
+
+}
+
+.descuento-article-main-ultima-visita{
+    display: flex;
+    color: green;
+    width: 70%;
+    font-size: 17px;
+
+}
+
+.nombre-article-main-ultima-visita{
+    display: none;
+    color: #666;
+    }
+
+.icono-carrito-main-ultima-visita{
+    text-align: center;
+    width: 100%; 
+}
+
+.section-main-ofertas{
+    background-color: #ebebeb;
+    margin: 1px;
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-main-ofertas{
+    font-size: 24px; 
+    font-weight: 800;
+    color:#666;
+    width: 100%;
+    text-align: center;
+    background-color: #ebebeb;
+    margin-top: 0px;
+}
+
+.article-main-ofertas{
+    margin: 10px;
+    border-top: 10px solid #ebebeb;
+    padding: 15px #ebebeb;
+    background-color: white;
+}
+
+
+.foto-article-main-ofertas{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.contenido-article-main-ofertas{
+    display: block;
+
+}
+
+.icono-envio-ofertas{
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    color: green;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.precio-article-main-ofertas{
+    color: #666;
+    display: block;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.descuento-article-main-ofertas{
+    color: green;
+    font-size: 17px;
+}
+
+.nombre-article-main-ofertas{
+    color: #666;
+    display: none;
+}
+
+
+.footer-completo{
+    background-color: #ebebeb;
+    color: #666;
+}
+
+.logo-footer{
+    width: 100%;
+    background-color: #EAC926;
+}
+
+.conjunto-section-footer{
+    width: 90%;
+    margin: auto;
+}
+
+.section-footer{
+    display: block;
+}
+
+.article-pagos-footer{
+    margin: 10px;
+    border-top: 10px solid #ebebeb;
+    padding: 15px #ebebeb;
+    background-color: white;
+}
+
+.article-envio-footer{
+    margin: 10px;
+    border-top: 10px solid #ebebeb;
+    padding: 15px #ebebeb;
+    background-color: white;    
+}
+
+.article-seguridad-footer{
+    margin: 10px;
+    border-top: 10px solid #ebebeb;
+    padding: 15px #ebebeb;
+    background-color: white;    
+}
+
+.article-copyright-footer{
+    margin: 10px;
+    border-top: 10px solid #ebebeb;
+    padding: 15px #ebebeb;
+    background-color: white;      
+}
+
+
+
+@media(min-width:361px){
+
+    .frase-logo-header{
+        display:flex;
+
+    }
+    .section-main-ultima-visita{
+        justify-content: flex-start;
+    }
+
+    .lista-navegacion-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+
+    .lista-navegacion-header ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;  
+        }
+    
+    .icono-burga-header{
+    display: none;    
+    }
+
+    .section-main-ultima-visita{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .article-main-ultima-visita{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .nombre-article-main-ultima-visita{
+        display: block;
+        width: 100%;
+        }    
+
+    .article-main-ofertas{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    
+    .nombre-article-main-ofertas{
+        display: block;
+        width: 100%;
+    }
+}   
+
+
+
+@media(min-width:769px){
+
+
+}
