@@ -1,67 +1,123 @@
 *{
-    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ";
     margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    padding: 0; 
+}
+
+li{
+    list-style-type:none;
+    font-size: 12px;
 }
 
 body{
     background-color: #ebebeb;
+    
 }
 
-.header-completo{
+header{
     background-color: #EAC926;
-    width: 100%;
+    
 }
 
 .nav-header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0
 }
 
-.header-top{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
+.precio{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+.descuento{
+    font-size: 12px;
+    color: #39b54a;
 }
 
 .logo-header{
-    width: 200px;
-    margin: 0,5px;
-    border-color: #ebebeb;
-    background-color: #EAC926;
+    width: 45%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
 }
 
 .header-input{
+    background-color: #ffffff;
+    width: 45%;
+    align-self: center;
     display: flex;
-    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.header-input form {
+    width: 100%;
+    display: flex;
     align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 50%;
+    margin: 0.5rem;
+}
+
+.header-campo-busqueda{
+    width: 100%;
+    display: inline;
+}
+
+.header-campo-busqueda input {
+    width: 100%;
+}
+
+.header-lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+input, button{
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.icono-lupa-input{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
 }
 
 .frase-logo-header{
-    display: flex;
-    font-size: 12px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
     
 }
 
-.lista-navegacion-header{
-    text-decoration: none;
-    color: #222222;
+.lista-navegacion-header-izq{
+
     display:none;
-    padding: 4px;    
-    flex-direction: column;
+
+}
+
+.lista-navegacion-header-der{
+
+    display:none;
+
 }
 
 .icono-burga-header{
-    margin: auto;
+    padding-bottom: 1rem;
+    color: white;
+    width: 50%;
+    align-self: center;
     text-align: center;
-    font-size: 12px;
-    display: block;
+    margin: auto;
 
 }
 
@@ -74,52 +130,42 @@ body{
 }
 
 .main-completo{
+    width: 90%;
+    margin: auto;
     background-color: #ebebeb;
-    text-align: center;
 }
 
 .section-main-ultima-visita{
-    background-color: #ebebeb;
-    margin: 1px;
-    width: 90%;
-    margin: auto;
-}
-
+        display: flex;
+        flex-wrap: wrap;
+    }
 .foto-banner-main-ultima-visita{
-    width: 100%;
-    margin: 0,5px;
-    border-color: #ebebeb;
-    background-color: #EAC926;
+    width: 100vw;
+    max-width: 100%;
+    vertical-align: top;
 }
 
 .titulo-main-ultima-visita{
-    font-size: 24px; 
-    font-weight: 800;
-    color:#666;
+    font-size: 24px;
     width: 100%;
-    text-align: center;
-    background-color: #ebebeb;
-    margin-top: 0px;
+    margin: 1rem 0;
 }
 
 .article-main-ultima-visita{
-    margin: 10px;
-    border-top: 1px solid #ebebeb;
-    border-left: 15px;
-    border-left: 15px;
-    padding: 15px #ebebeb;
-    background-color: white;
-
-}
-
-.foto-article-main-ultima-visita{
     width: 100%;
-    height: 100%;
-    border-bottom: solid 1px #ebebeb;
+    margin-bottom: 10px;
+
+
+
 }
+
+
 
 .contenido-article-main-ultima-visita{
-    display: flex; 
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 1rem;
 }
 
 .icono-envio-ultima-visita{
@@ -173,50 +219,41 @@ body{
 }
 
 .section-main-ofertas{
-    background-color: #ebebeb;
-    margin: 1px;
-    width: 90%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .titulo-main-ofertas{
-    font-size: 24px; 
-    font-weight: 800;
-    color:#666;
+    font-size: 24px;
     width: 100%;
-    text-align: center;
-    background-color: #ebebeb;
-    margin-top: 0px;
+    margin: 1rem 0;
 }
 
 .article-main-ofertas{
-    margin: 10px;
-    border-top: 10px solid #ebebeb;
-    padding: 15px #ebebeb;
-    background-color: white;
-}
-
-
-.foto-article-main-ofertas{
     width: 100%;
-    height: 100%;
-    border-bottom: solid 1px #ebebeb;
+    margin-bottom: 10px;
 }
+
+
 
 .contenido-article-main-ofertas{
-    display: block;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 1rem;
 
 }
 
 .icono-envio-ofertas{
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-    color: green;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+        text-align: center;
+        width: 100%;
+        border-radius: 10px;
+        color: green;  
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
 
 .precio-article-main-ofertas{
     color: #666;
@@ -283,61 +320,85 @@ body{
     background-color: white;      
 }
 
-
+.icono-carrito-main-ofertas{
+    text-align: center;
+    width: 100%; 
+}
 
 @media(min-width:361px){
 
-    .frase-logo-header{
-        display:flex;
-
-    }
-    .section-main-ultima-visita{
-        justify-content: flex-start;
-    }
-
-    .lista-navegacion-header{
+    nav {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        }
-
-    .lista-navegacion-header ul{
-        display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;  
-        }
-    
+        padding-bottom: 1.5rem;
+    }
+
+    .lista-navegacion-header-izq{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        text-align: center;
+    }
+    .lista-navegacion-header-der{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        text-align: center;
+    }
+ 
     .icono-burga-header{
     display: none;    
     }
 
-    .section-main-ultima-visita{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .article-main-ultima-visita {
+        width: 45%;
     }
-
-    .article-main-ultima-visita{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
-    .nombre-article-main-ultima-visita{
-        display: block;
-        width: 100%;
-        }    
 
     .article-main-ofertas{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 45%;
     }
-    
-    .nombre-article-main-ofertas{
-        display: block;
-        width: 100%;
-    }
-}   
 
+    .nav-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: 2rem 0;
+}  
+    .section-main-ofertas{
+        justify-content: space-between;
+    }
+    .section-main-ultima-visita{
+        justify-content: space-between;
+
+    }
+    .logo-header{
+        width: 30%;
+    }
+    .header-input{
+        width: 30%;
+    }
+    .frase-logo-header{
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .precio{
+        font-size: 0.8rem;
+    }
+   
+}   
 
 
 @media(min-width:769px){
 
+    .article-main-ultima-visita {
+        width: 23%;
+    }
 
+    .article-main-ofertas{
+        width: 23%;
+    }
 }
