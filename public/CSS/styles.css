@@ -154,9 +154,6 @@ input, button{
 .article-main-ultima-visita{
     width: 100%;
     margin-bottom: 10px;
-
-
-
 }
 
 
@@ -169,16 +166,6 @@ input, button{
 }
 
 .icono-envio-ultima-visita{
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-    color: green;  
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.iconoenvio{
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -188,8 +175,12 @@ input, button{
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
-}
+    right: 80px;
+    color: green;
+    top: -15px;
+    }
+
+
 
 .precio-article-main-ultima-visita{
     color: #666;
@@ -235,6 +226,10 @@ input, button{
 }
 
 
+.precioydescuento{
+    display: flex;
+}
+
 
 .contenido-article-main-ofertas{
     background-color: white;
@@ -245,14 +240,20 @@ input, button{
 }
 
 .icono-envio-ofertas{
-        text-align: center;
-        width: 100%;
-        border-radius: 10px;
-        color: green;  
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: 80px;
+        color: green;
+        top: -15px;
     }
+    
 
 
 .precio-article-main-ofertas{
@@ -274,50 +275,49 @@ input, button{
 
 
 .footer-completo{
-    background-color: #ebebeb;
+    background-color: white;
     color: #666;
 }
 
 .logo-footer{
     width: 100%;
-    background-color: #EAC926;
 }
 
 .conjunto-section-footer{
-    width: 90%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-footer{
-    display: block;
+
+    text-align: center;
+    max-width: 30rem;
+    font-size: 14px;
 }
 
 .article-pagos-footer{
     margin: 10px;
-    border-top: 10px solid #ebebeb;
-    padding: 15px #ebebeb;
-    background-color: white;
+    padding: 15px;
+    border-top: 10px;
 }
 
 .article-envio-footer{
     margin: 10px;
-    border-top: 10px solid #ebebeb;
-    padding: 15px #ebebeb;
-    background-color: white;    
+    border-top: 10px;
+    padding: 15px;
 }
 
 .article-seguridad-footer{
     margin: 10px;
-    border-top: 10px solid #ebebeb;
-    padding: 15px #ebebeb;
-    background-color: white;    
+    border-top: 10px;
+    padding: 15px;   
 }
 
 .article-copyright-footer{
     margin: 10px;
-    border-top: 10px solid #ebebeb;
-    padding: 15px #ebebeb;
-    background-color: white;      
+    border-top: 10px;
+    padding: 15px;    
 }
 
 .icono-carrito-main-ofertas{
@@ -388,6 +388,17 @@ input, button{
     .precio{
         font-size: 0.8rem;
     }
+
+    .nombre-article-main-ultima-visita{
+        display: flex;
+        color: #666;
+        text-align: center;
+        }
+    .nombre-article-main-ofertas{
+        display: flex;
+        color: #666;
+        text-align: center;
+        }       
    
 }   
 
