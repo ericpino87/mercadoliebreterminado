@@ -182,6 +182,62 @@ input, button{
 
 
 
+    .create-form{
+        padding: 20px 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 218px;
+    }
+    .control-form{
+        margin-bottom: 15px;
+    }
+    .main-form{
+        max-width: 460px;
+        border: 1px #ccc solid;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .radio_title{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .radio-form input{
+        margin-right: 20px;
+        margin-top: 20px;
+        width: auto;
+    }
+    .input_title{
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .control-form label{
+        margin-bottom: 5px;
+        font-style: normal;
+    }
+    .control{
+        width: 100%;
+        padding: 8px;
+    }
+    .boton-form{
+        background-color: #03264C;
+        border: none;
+        font-style: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        transition: .5s linear all;
+    }
+    .boton-form:hover{
+        background-color: #0022aa;
+    }
+
+    
+
 .precio-article-main-ultima-visita{
     color: #666;
     font-size: 18px;
