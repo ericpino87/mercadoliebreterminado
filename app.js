@@ -9,31 +9,19 @@ app.get("/", function (req,res){
     res.sendFile(path.join(__dirname, "./views/home.html"));
 });
 
-app.get("/nosotros",function(req,res){
-    res.sendFile(path.join(__dirname, "./views/nosotros.html"));
+app.get("/creaCuenta",function(req,res){
+    res.sendFile(path.join(__dirname, "./views/creaCuenta.html"));
 });
 
-app.get("/registrate",function(req,res){
-    res.sendFile(path.join(__dirname, "./views/registro.html"));
+app.get("/ingresa",function(req,res){
+    res.sendFile(path.join(__dirname, "./views/ingresa.html"));
 });
 
-app.get("/ofertas",function(req,res){
+app.get("/misCompras",function(req,res){
     res.sendFile(path.join(__dirname, "./views/ofertas.html"));
 });
 
-app.get("/contactanos",function(req,res){
-    res.sendFile(path.join(__dirname, "./views/contactanos.html"));
-});
-
-app.get("/registro",function(req,res){
-    res.sendFile(path.join(__dirname, "./views/registro.html"));
-});
-
-app.get("/ingreso",function(req,res){
-    res.sendFile(path.join(__dirname, "./views/ingreso.html"));
-});
-
-app.get("/miscompras",function(req,res){
+app.get("/carrito",function(req,res){
     res.sendFile(path.join(__dirname, "./views/carrito.html"));
 });
 

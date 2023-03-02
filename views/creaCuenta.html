@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+</head>
+<body>
+    <header> 
+        <section class="nav-header">
+            <figure class="logo-header">    
+                <img  src="/images/logo.svg" alt="Logo mercado Liebre"> 
+            </figure>    
+                                                       
+            <section class="header-input">
+                <form action="/buscar" method="POST">
+                    <div class="header-campo-busqueda"> 
+                        <input type="text" placeholder="Buscá productos, marcas y mas" required>
+                    </div>
+                    <div class="header-lupa"> 
+                    <button class="icono-lupa-input"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </section>
+               
+            <section class="frase-logo-header">
+                    <div><i class="fa-solid fa-hand-holding-dollar"></i></div>                                    
+                       <p>Comprá al mejor precio y en cuotas</p>
+                    
+            </section>          
+        </section> 
+                <nav >
+                   <ul class="lista-navegacion-header-izq">
+                        <li><a href="/ofertas">Ofertas</a></li>
+                        <li><a href="/servicios">Servicios</a></li>
+                        <li><a href="/nosotros">Nosotros</a></li>
+                   </ul>
+                   <ul class="lista-navegacion-header-der">
+                        <li><a href="/registro">Crea tu cuenta</a>
+                        <i class="fa-sharp fa-regular fa-address-card"></i>
+                        </li>
+                        <li><a href="/ingreso">Ingresa</a>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        </li>
+                        <li><a href="/carrito">Mis compras</a>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                    </ul>
+                </nav>            
+                <div class="icono-burga-header">                      
+                    <i class="fas fa-bars icono-burga-clase"></i>
+                </div>
+        <img class="foto-banner-main-ultima-visita" src="/images/banner.jpg">  
+    </header>
+    <main>
+        <form action="/create-user" method="POST" class="registerForm">
+            <div class="ctrlForm">
+                <label for="">Nombre:</label>
+                <input type="text" name="userName" class="ctrl" required oninvalid="this.setCustomValidity('Por favor ingrese su nombre')">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Apellido:</label>
+                <input type="text" name="userLastName" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Nombre de usuari@:</label>
+                <input type="text" name="userLastName" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Fecha de nacimiento</label>
+                <input type="date" name="userBDay" value="1900-01-01" min="1900-01-01" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Domicilio:</label>
+                <input type="text" name="userAddress" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm-radio">
+                <label for="">Perfil de usuari@:</label>
+                <div><input type="radio" name="userProfile" value="buyer" class="ctrl-radio"><p>Comprador</p></div>
+                <div><input type="radio" name="userProfile" value="seller" class="ctrl-radio"><p>Vendedor</p></div>
+            </div>
+            <div class="ctrlForm-checkbox">
+                <label for="">Categorías de interés:</label>
+                <div><input type="checkbox" name="interestCategories" value="electronics" class="ctrl-checkbox"><p>Electro</p></div>
+                <div><input type="checkbox" name="interestCategories" value="fashion" class="ctrl-checkbox"><p>Moda</p></div>
+                <div><input type="checkbox" name="interestCategories" value="home-items" class="ctrl-checkbox"><p>Hogar</p></div>
+                <div><input type="checkbox" name="interestCategories" value="toys" class="ctrl-checkbox"><p>Juguetería</p></div>
+                <div><input type="checkbox" name="interestCategories" value="health" class="ctrl-checkbox"><p>Vida sana</p></div>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Foto de usuari@:</label>
+                <input type="file" name="userPhoto" accept=".jpg">
+            </div>
+            <div class="ctrlForm">
+                <label for="">Contraseña:</label>
+                <input type="password" name="userPassword" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <div class="ctrlForm">
+                <label for="">Confirmar contraseña:</label>
+                <input type="password" name="userPasswordConfirm" class="ctrl">
+                <span class="feedback"></span>
+            </div>
+            <button type="reset" class="formProdButton">Borrar</button>
+            <a href="http://localhost:3000/"><button type="button" class="formProdButton">Guardar</button></a>
+        </form>
+    </main>
+    <footer class="footer-completo">
+        
+        <div class="conjunto-section-footer">
+            <section class="section-footer">
+                    <article class="article-pagos-footer">
+                        <i class="fa-solid fa-credit-card texto.footer"></i>
+                            <h2>Pagá con tarjeta o en efectivo</h2>                                                                
+                            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. 
+                            ¡Y siempre es seguro!
+                            </p>
+                    </article>    
+            </section> 
+            <section class="section-footer">
+                    <article class="article-envio-footer">
+                        <i class="fa-solid fa-gift"></i>
+                            <h2>Envío gratis desde $ 2.500</h2>
+                            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                            productos. Es un beneficio de Mercado Puntos.
+                            </p>
+                    </article>
+            </section>
+            <section class="section-footer">
+                    <article class="article-seguridad-footer">
+                        <i class="fa-solid fa-user-shield"></i>
+                            <h2>Seguridad, de principio a fin</h2>
+                            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                            porque estás siempre protegid@.
+                            </p>
+                    </article>
+            </section> 
+            <section class="section-footer">
+                    <article class="article-copyright-footer">
+                        <h1>Copyright © 1999-2020 MercadoLiebre S.R.L.</h1>                           
+                    </article>
+            </section>
+        </div> 
+    </footer>
+</body>
+</html>
